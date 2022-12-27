@@ -10,7 +10,7 @@ load_dotenv()
 TOKEN = os.getenv('tg_token')
 updater = Updater(TOKEN)
 
-updater.dispatcher.add_handler(CommandHandler('hi', hi_command))
+updater.dispatcher.add_handler(CommandHandler('start', hi_command))
 updater.dispatcher.add_handler(CommandHandler('help', help_command))
 updater.dispatcher.add_handler(CommandHandler('sum_help', help_sum_command))
 updater.dispatcher.add_handler(CommandHandler('sub_help', help_sub_command))

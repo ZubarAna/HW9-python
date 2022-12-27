@@ -5,8 +5,7 @@ from fractions import Fraction
 
 def hi_command(update: Update, context: CallbackContext):
     log(update, context)
-    update.message.reply_text(f'Привет, {update.effective_user.first_name}! Посчитаем?\n\
-                                 Не знаешь, что делать? Введи /help')
+    update.message.reply_text(f'Привет, {update.effective_user.first_name}! Посчитаем?\nНе знаешь, что делать? Введи /help')
 
 def help_command(update: Update, context: CallbackContext):
     log(update, context)
